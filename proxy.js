@@ -10,7 +10,7 @@ app.use(express.json());
 app.post('/proxy', async (req, res) => {
     try {
         const response = await axios.post('https://api.assemblyai.com/v2/realtime/token', {
-            "expires_in": 480
+            "expires_in": 360000
         }, {
             headers: {
                 Authorization: '21f5f08bb661498d8f74b2fa53e82ab1',
